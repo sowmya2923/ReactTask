@@ -14,10 +14,11 @@ function TodoApp() {
 const addTask = () => {
     if (task.trim() === "") {
       alert("Enter a task");
-      return;
+      return
     }
     setTasks([...tasks, task]);
     setTask("");
+    console.log("hi")
   };
 
   
